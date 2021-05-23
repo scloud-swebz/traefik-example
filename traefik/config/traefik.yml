@@ -12,7 +12,7 @@ http:
       entryPoints: ['http']
 
     sub-redirect:
-      rule: 'HostRegexp(`{.*}.demo.zekro.de`)'
+      rule: 'HostRegexp(`{.*}.stest1.s-tick.de`)'
       middlewares: ['sub-redirect']
       service: 'noop'
       entryPoints: ['https']
@@ -29,7 +29,7 @@ http:
     sub-redirect:
       redirectRegex:
         regex: '.*'
-        replacement: 'https://demo.zekro.de'
+        replacement: 'https://stest1.s-tick.de'
 
 
   services:
